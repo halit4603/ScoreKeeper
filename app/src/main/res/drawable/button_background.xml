@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="oval">
-    <stroke android:color="@color/colorPrimary"
-        android:width="2dp"/>
-    ></shape>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+    <shape
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="oval">
+        <stroke android:color="@color/colorPrimary"
+            android:width="2dp"/>
+        ></shape>
+    </item>
+    <item android:state_pressed="true" android:color="@android:color/white" >
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <stroke android:color="@color/colorPrimary"
+                android:width="2dp"/>
+            <solid android:color="@color/colorPrimary"> </solid>
+            </shape>
+
+    </item>
+</selector>
